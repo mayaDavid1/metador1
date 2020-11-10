@@ -1,0 +1,383 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url('media/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    direction: rtl;
+    user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.speech-bubble {
+	position: relative;
+	background: white;
+    border-radius: .4em;
+    border-style: solid;
+    border-color: #2f528f;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2em solid transparent;
+	border-left-color: white;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -1em;
+	margin-right: -2em;
+}
+
+.next-btn, .prev-btn {
+    display: none;
+    width: 5vw;
+    height: 12vh;
+    position: absolute;
+    top: 80vh;
+    right: 7vw;
+}
+
+.next-btn:hover, .prev-btn:hover {
+    cursor: pointer;
+}
+
+.next-btn {
+    right: 92vw;
+    transform: scaleX(-1);
+}
+
+/* start page */
+.start-page {
+    height: 100%;
+}
+
+.start-page img {
+    width: 40vw;
+    height: 30vh;
+    position: absolute;
+    left: 20vw;
+    top: 25vh;
+}
+
+.start-page p {
+    font-size: 7vw;
+    position: absolute;
+    left: 20vw;
+    top: 25vh;
+}
+
+.start-page .parachutist {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.start-page .start-btn button {
+    font-size: 2vw;
+    color: white;
+    background-color: rgb(122,0,0,0.7);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1vw;
+    position: absolute;
+    right: 43vw;
+    top: 75vh;
+    transition: all 200ms linear;
+}
+
+.start-page .start-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(150,0,0,0.8);
+
+}
+
+/* warzone-tutorial */
+
+.warzone-tutorial {
+    display: none;
+    height: 100%;
+    background-image: url('media/warzone-tutorial.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.warzone-tutorial p {
+    position: absolute;
+    color: black;
+    font-size: 3vw;
+    right: 30vw;
+    top: 20vh;
+    width: 50vw;
+    padding: 2%;
+    text-align: center;
+}
+
+.commander-speech-counter {
+    position: absolute;
+    font-size: 2vw;
+    top: 42%;
+    right: 64%;
+    width: 20vw;
+    text-align: left;
+}
+
+/* introduction text */
+.introduction-text {
+    display: none;
+}
+
+.main-text li {
+    font-size: 2.5vw;
+}
+
+.title {
+    position: absolute;
+    top: 10vh;
+    right:40vw;
+    color:rgb(122,0,0);
+    font-size: 7vw;
+}
+
+.main-text {
+    position: absolute;
+    top: 26vh;
+    right: 15vw;
+    background-color: rgba(241,241,241,0.9);
+    height: 50vh;
+    width: 70vw;
+    border-style: solid;
+    border-color: rgb(132, 120,122);
+    border-radius: 9vw;
+    font-size: 2.5vw;
+    padding-top: 4vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+/* launcher-parts1 */
+.launcher-parts1, .launcher-parts2 {
+    display: none;
+}
+
+.lightMatador {
+    position: absolute;
+    top: 16vh;
+    right: 4vw;
+    height: 43vh;
+    width: 60vw;
+}
+
+.subTitle {
+    font-size: 5vh;
+}
+
+.magenAhori, .magenKidmi, .zavil, .kavenet, .michlol {
+    position: absolute;
+    height: 15vh;
+    width: 8vw;
+    opacity: 0;
+}
+
+.magenAhori:hover, .magenKidmi:hover, .zavil:hover, .kavenet:hover, .michlol:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.magenAhoriText, .magenKidmiText, .zavilText, .kavenetText, .michlolText {
+    position: absolute;
+    font-size: 4vh;
+    color: rgb(206, 136, 7);
+}
+
+.magenAhori {
+    top: 25vh;
+    right: 7vw;
+}
+
+.magenAhoriText {
+    top: -13vh;
+}
+
+.magenKidmi {
+    top: 25vh;
+    left: 13vw;
+}
+
+.magenKidmiText {
+    top: -13vh;
+}
+
+.zavil {
+    height: 10vh;
+    width: 19vw;
+    top: 28vh;
+    left: 39vw;
+}
+
+.zavilText {
+    top: -10vh;
+    right: 5vw;
+}
+ 
+.kavenet {
+    top: 24vh;
+    left: 29vw;
+    height: 8vh;
+}
+
+.kavenetText {
+    top: -10vh;
+}
+
+.michlol {
+    top: 35vh;
+    left: 27vw;
+}
+
+.michlolText {
+    top: 10vh;
+    width: 20vw;
+}
+
+/* launcher-parts2 */
+.ahiza, .dricha, .nesia, .kat, .nitzra, .edek {
+    position: absolute;
+    height: 15vh;
+    width: 8vw;
+    opacity: 0;
+   }
+    
+   .ahiza:hover, .dricha:hover, .nesia:hover, .kat:hover, .nitzra:hover, .edek:hover {
+    opacity: 1;
+    cursor: pointer;
+   }
+    
+   .ahizaText, .drichaText, .nesiaText, .katText, .nitzraText, .edekText {
+    position: absolute;
+    font-size: 4vh;
+    color: rgb(206, 136, 7);
+   }
+    
+   .ahiza {
+    top: 34vh;
+    right: 53vw;
+   }
+    
+   .ahizaText {
+    top: 10vh;
+    width: 15vw;
+   }
+    
+   .dricha {
+    top: 35vh;
+    left: 35vw;
+    width: 5vw;
+   }
+    
+   .drichaText {
+    top: 10vh;
+    width: 15vw;
+   }
+    
+   .nesia {
+    height: 10vh;
+    width: 18vw;
+    top: 37vh;
+    left: 42vw;
+   }
+    
+   .nesiaText {
+    top: 5vh;
+    right: 5vw;
+   }
+    
+   .kat {
+    top: 23vh;
+    left: 61vw;
+    height: 27vh;
+    width: 4vw;
+   }
+    
+   .katText {
+    top: -10vh;
+   }
+    
+   .nitzra {
+    top: 35vh;
+    left: 27vw;
+    width: 7vw;
+    height: 6vh;
+   }
+    
+   .nitzraText {
+    top: 3vh;
+   }
+    
+   .edek {
+    top: 28vh;
+    left: 34vw;
+    height: 6vh;
+   }
+    
+   .edekText {
+    top: -12vh;
+   }
+
+   /* operationModes */
+   .picture {
+    position: absolute;
+    right: 3vw;
+    top: 2vh;
+    width: 90%;
+    height: 90%;
+}
+
+.text {
+    position: absolute;
+    right: 50vw;
+    top: 35vh;
+}
+
+.sidepic {
+    width: 30vw;
+    height: 45vh;
+}
+
+.sidetext {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.opMode {
+    display: none;
+}
+
+.opMode .main-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opMode img {
+    width: 50%;
+    height: 30%;
+}
+
+.anim-btn {
+    width: 14vw;
+    height: 8vh;
+}
+
+
+
+

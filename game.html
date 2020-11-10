@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="game.css" />
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="game.js"></script>
+</head>
+
+<body>
+    <container class="startScreen">
+        <div class="speech-bubble-ds">
+            <div id="textArea">
+                <p id="text">צנחן, תתעורר! בזמן שלמדת גילינו מבצר מלא באויבים!​</p>
+                <img src="media/nextarrow.png" id="next">
+                <div class="speech-bubble-ds__arrow"></div>
+            </div>
+            <div id="buyArea">
+                <p id="coins">40</p>
+                <p id="ammo">0/4</p>
+                <img src="media/shell.png" id="shell">
+                <div id="buyBtn">10</div>
+            </div>
+        </div>
+    </container>
+    <container id="gameScreen">
+        <div class="speech-bubble-ds">
+                <p id="text2"></p>
+                <div class="speech-bubble-ds__arrow"></div>
+        </div>
+        <img src="media/rocketGif.gif" id="rocket">
+        <canvas id="canvas"></canvas>
+    </container>
+</body>
+
+</html>
